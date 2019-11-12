@@ -1,0 +1,58 @@
+.pagination {
+    float: right;
+}
+
+/*.pagination a {
+    color: black;
+    float: left;
+    padding: 6px 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 0;
+}*/
+
+/*
+.active-a {
+    background-color: cadetblue;
+    color: white;
+}
+*/
+
+/*.pagination a:hover:not(.active) {background-color: #ddd;}*/
+
+/*#top-table select:hover:not(.active) {background-color: #ddd;}*/
+
+/*
+.pagination select {
+    float: left;
+    padding: 6px 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+}*/
+
+#top-table p{
+    display: inline;
+    font-size: 15px;
+}
+
+
+#generate-report{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+#top-table select{
+    height: 38px;
+    padding: 0;
+    background-color: white;
+    width: 45px;
+    cursor: pointer;
+    display: inline;
+    font-size: 15px;
+}
+
+

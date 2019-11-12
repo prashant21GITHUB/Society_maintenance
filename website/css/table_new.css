@@ -1,0 +1,55 @@
+#requests {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+/*    border-collapse: separate;*/
+
+/*    float: right;*/
+/*    overflow: scroll;*/
+    width: 100%;
+    margin-bottom: 50px;
+    /*margin-top: 10px;*/
+/*    border: 1px solid;*/
+/*
+    border-radius: 20px;
+    border: 1px solid #BCC6CC;
+*/
+    box-shadow: -2px 2px 6px #639460;
+}
+
+#requests td, #requests th {
+    border: 1px solid #ddd;
+    padding: 8px 2px;
+}
+
+
+#requests tr:nth-child(even){background-color: #f2f2f2;}
+
+#requests tr:hover {
+    background-color: #ccc;
+}
+
+#requests th {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+    background-color: #299960;
+/*    background-color: #3d5b8c;*/
+    color: white;
+    min-width: 90px;
+}
+
+#requests .reqId {
+    text-align: center;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167f92;
+}
+.modal-header {
+    text-align: center;
+    padding: 5px
+}

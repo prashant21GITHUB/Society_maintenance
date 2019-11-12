@@ -1,0 +1,22 @@
+<form id="register-form">
+    <h1> Register New User</h1>   
+                 
+    <label for="fullname">Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required="required">
+                        
+    <label for="towers">Choose Tower</label>
+    <select id="towers" name="towers">
+                        
+    </select>
+                        
+    <label for="flatNo">Flat Number</label>
+    <input type="text" id="flatNo" name="flatNo" placeholder="Flat No" required="required">
+                        
+    <label for="mobileNo">Mobile Number</label>
+    <input type="text" id="mobileNo" name="mobileNo" placeholder="0000000000" pattern="[1-9]{1}[0-9]{9}"  title="Mobile no. must be 10 digits." required="required">
+                        
+    <label for="email">Email Id</label>
+    <input type="email" id="email" name="email" placeholder="Email Id" required="required">
+                        
+    <input type="submit" id="submitReq" value="Create">
+</form>

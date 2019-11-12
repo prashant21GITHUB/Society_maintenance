@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" href="../css/home.css"/>
+        <link  rel="stylesheet" href="../css/modal.css" />
+        <link rel="stylesheet" href="../css/table_new.css" />
+        <link rel="stylesheet" href="../css/request.css" />
+        <link rel="stylesheet" href="../css/jquery.multiselect.css"/>
+        <link rel="stylesheet" href="../css/filters.css" />
+        <link rel="stylesheet" href="../css/top_nav.css" />
+        <link rel="stylesheet" href="../css/simplePagination.css" />
+        
+        
+        
+        <link rel="stylesheet" href="../css/loader.css"/>
+        <link rel="stylesheet" href="../css/pagination.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" >
+        <link href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <!--        <link type="text/css" href="../css/home_header_menu.css" rel="stylesheet"/>-->
+        
+    </head>
+    
+    <body>
+        
+        
+        <div class="topnav" id="myTopnav">
+            <a class="active-top topnav-menu" id="home">Home</a>
+            <a class="topnav-menu" id="request">Create Request</a>
+            <a class="topnav-menu" id="reports">Reports</a>
+            <!--<a class="topnav-menu" id="register">Register User</a>-->
+                        <!--<a href="#about">About</a>-->
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+<!--        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>-->
+        
+        
+        <!--
+                <div class="sidenav">
+                  <a href="#about">About</a>
+                  <a href="#services">Services</a>
+                  <a href="#clients">Clients</a>
+                  <a href="#contact">Contact</a>
+                </div>
+        -->
+        
+        <div class="logo-header">  <img class="logo" alt="logo" src="../img/pan-oasis-logo.png" /> </div>
+        <div class="loader-div">   
+            <div class="loader"></div>
+<!--            <p> Please wait...</p>-->
+        </div>
+        
+<!--        <div class="filters topnav-div" id="filters-div" hidden>
+            
+        </div> -->
+        
+        <div id="home-div" class="topnav-div"> 
+            <h1 class="table-header" id="table-header">MAINTENANCE  REQUESTS</h1>
+            
+            <div class="top-filters" id="filters-div">
+
+            </div>
+            <!--<div class="tooltip">Click here to refresh table !!</div>-->    
+            
+            <div id="top-table" hidden>
+<!--                <div id="status-filter">
+                    
+                </div>-->
+                <p>Page size</p>
+                <!--<h5>Page Size</h5>-->
+                <select id="page-size"> 
+                    <option>10</option>
+                    <option>15</option>
+                    <option>30</option>
+                </select>
+                <a id="generate-report">Generate report</a>
+                <div id="pagination-div" class="pagination">
+                   
+                </div>
+<!--                <div class="prev-next">
+                    <a href="#" class="previous">&laquo; PREV</a>
+                    <a href="#" class="next">NEXT &raquo;</a> 
+                </div>-->
+            </div>
+            
+            <table id="requests"  width="100%">
+                
+            </table>
+            <h4 id="no-requests" hidden>No requests</h4>
+            
+            <div id="id01" class="modal">
+                
+                <form class="modal-content animate" id="update-status-form">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        
+                    </div>
+                    <h3 class="modal-header"> Update request status: </h3>
+                    <div class="container" id="status-options">
+                        
+                    </div>
+                    
+                    <div class="bottomContainer" style="background-color:#f1f1f1">
+                        
+                        <button type="submit" class="submitBtn" id="submitBtn">Save</button>
+                        
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        
+                    </div>
+                </form>
+            </div>
+            <!--         <div class="toast" id="statusUpdateToast"></div>-->
+            
+        </div>
+        
+        <div id="request-div" class="topnav-div" hidden>    
+            
+            
+        </div>
+        
+        <div id="register-div" class="topnav-div" hidden>    
+            
+            
+        </div>
+
+        <div id="reports-div" class="topnav-div" hidden>    
+
+
+        </div>
+        
+        
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <!-- Include Date Range Picker -->
+       
+        
+        <script src="../js/context.js"></script>
+        <script src="../js/jquery.simplePagination.js"></script>
+        <script src="../js/table.js"></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/jquery.multiselect.js"></script>
+        <script src="../js/filters.js"></script>
+        <script src="../js/reports.js"></script>
+        
+        <script src="../js/request.js"></script>
+        <script src="../js/modal.js"></script>
+        <script src="../js/register.js"></script>
+        
+        <script src="../js/pagination.js"></script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            
+            //             $( function() {
+            //                $( "#datepicker" ).datepicker();
+            //                 $("#datepicker").datepicker("option", "dateFormat","dd-M-yy");
+            //              } );
+
+        </script>
+        <br><br><br>
+    </body>
+</html>

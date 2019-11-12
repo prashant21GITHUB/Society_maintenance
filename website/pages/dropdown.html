@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="../css/multiselect_bootstrap.css">
+
+        
+       
+
+
+</head>
+<body>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="rolename">Role Name</label>
+    <div class="col-md-4">
+        <select id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
+            <option value="cheese">Cheese</option>
+            <option value="tomatoes">Tomatoes</option>
+            <option value="mozarella">Mozzarella</option>
+            <option value="mushrooms">Mushrooms</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="onions">Onions</option>
+        </select>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.multiselect-ui').multiselect({
+            onChange: function(option, checked) {
+                // Get selected options.
+                var selectedOptions = $('.multiselect-ui option:selected');
+ 
+                if (selectedOptions.length >= 4) {
+                    // Disable all other checkboxes.
+                    var nonSelectedOptions = $('.multiselect-ui option').filter(function() {
+                        return !$(this).is(':selected');
+                    });
+ 
+                    nonSelectedOptions.each(function() {
+                        var input = $('input[value="' + $(this).val() + '"]');
+                        input.prop('disabled', true);
+                        input.parent('li').addClass('disabled');
+                    });
+                }
+                else {
+                    // Enable all checkboxes.
+                    $('.multiselect-ui option').each(function() {
+                        var input = $('input[value="' + $(this).val() + '"]');
+                        input.prop('disabled', false);
+                        input.parent('li').addClass('disabled');
+                    });
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+

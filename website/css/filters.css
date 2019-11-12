@@ -1,0 +1,133 @@
+.btn {
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: normal;
+    
+    cursor: pointer;
+    
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 2px;
+    height: auto;
+    border: 1px solid;
+    vertical-align: middle;
+    width: auto;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn button:hover {
+    background-color: red;
+}
+
+.filters {
+/*    height: auto;
+    width: 170px;*/
+    font-size: 14px;
+    /*position: absolute;*/
+    /*z-index: 1;*/
+    /*margin-top: 85px;*/
+    /*left: 0;*/
+    background-color: #fafafa;
+    /*overflow: auto;*/
+    /*padding-top: 20px;*/
+    /*display: inline-block;*/
+    /*margin-left: 10px;*/
+    /*padding: 10px 0;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px groove;
+    margin-bottom: 10px;
+   padding-top: 10px;
+    /*box-shadow: 2px 2px 10px #666;*/
+   
+    /*box-shadow: 1px 1px 2px #639460;*/
+}
+
+
+
+.filters a{
+    float: right;
+}
+
+.filters input[type=text] {
+    width: auto;
+    height: 40px;
+    background-color: azure;
+    display: inline;
+}
+#datepicker-div {
+    position: relative;
+    display: block;
+    /*float: right;*/
+}
+
+#datepicker {
+    width: 230px;
+    overflow: auto;
+}
+
+label {
+     font-family: monospace;
+    color: darkslategrey;
+    font-weight: 400;
+    /*display: block;*/
+}
+
+.dropdown {
+    width: 180px;
+    background-color: azure;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+#refreshBtn {
+    /*float: right;*/
+    margin-bottom: 10px;
+    background-color: cadetblue;
+    color: white;
+    margin-left: 30px;
+    font-family: monospace;
+    font-weight: bolder;
+    /*display: block;*/
+    border-radius: 15px;
+}
+
+#clearFilters {
+    float: right;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background-color: threedshadow;
+    color: white;
+    cursor: pointer;
+    /*margin-left: 10px;*/
+    font-family: monospace;
+    font-weight: bolder;
+    /*box-shadow: 0px 0px 8px #888;*/
+
+}
+
+
+/*.filters img {
+    float: right;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}*/
+
+
+.fheader{
+    font-family: monospace;
+    font-size: 15px;
+    color: dimgray;
+    box-shadow: 0px 0px 8px #888;
+    text-align: center;
+    font-weight: 600;
+}
+
+.invalid {
+    /*background-color: red;*/
+    
+}
